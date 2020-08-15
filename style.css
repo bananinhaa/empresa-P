@@ -1,0 +1,28 @@
+body {
+    background-color: #003D33;
+}
+
+.nav {
+    background-color: white;
+    font-size: 25px ;
+}
+
+.jb1 {
+    margin: 10%;
+    margin-top: 15%;
+    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;   
+}
+
+.jb2 {
+    margin: 15%;
+    margin-top: 8%; 
+    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}

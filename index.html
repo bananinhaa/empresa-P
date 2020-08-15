@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="script.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Empresória!</title>
+  </head>
+  <body>
+    <div>
+        <!-- Nav bar -->
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Empresória!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Calculadora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="empresa.html">Quem somos!</a>
+            </li>
+          </ul>
+    </div>
+    
+    <div class="jumbotron jumbotron-fluid jb2">
+        <div class="container">
+
+            <!-- Labels -->
+            <form>
+                <div class="form-group">
+                  <label for="nome">Nome</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Ex: João">
+                </div>
+                <div class="form-group">
+                    <label for="valorhr">Valor de Horas Trabalhadas</label>
+                    <input type="text" class="form-control" id="valorhr" placeholder="quanto por hora">
+                  </div>                
+                  <div class="form-group">
+                    <label for="quanthr">Quantidade de Horas trabalhadas</label>
+                    <input type="text" class="form-control" id="quanthr" placeholder="quanto trabalhou">
+                  </div>                
+                  <div class="form-group">
+                    <label for="imposto">Imposto de Renda</label>
+                    <input type="text" class="form-control" id="imposto" placeholder="quanto de imposto em R$">
+                  </div>
+              </form>
+
+              <!-- Botões -->
+              <div>
+                <button type="button" onclick="calculo()" id="btc" class="btn btn-outline-primary">Calcular</button>
+                <button type="button" onclick="limpar()" id="btl" class="btn btn-outline-danger">Limpar</button>
+                <button type="button" onclick="mostrar()" id="bts" class="btn btn-outline-success">mostrar salários calculados</button>
+              </div>
+
+              <!-- ↓ preguiça -->
+                 <br>
+
+              <!-- Tabela -->
+                <div>
+                  <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Valor</th>
+                          <th scope="col">Alíquota(%)</th>
+                          <th scope="col">Parcela a deduzir do IRPF (R$)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Até R$22.847,76</td>
+                          <td>Isento</td>
+                          <td>R$0,00</td>
+                        </tr>
+                        <tr>
+                          <td>De R$22.847,77 até R$33.919,80</td>
+                          <td>7,5%</td>
+                          <td>R$1.713,58</td>
+                        </tr>
+                        <tr>
+                          <td>De R$33.919,81 até R$45.012,60</td>
+                          <td>15%</td>
+                          <td>R$4.257,57</td>
+                        </tr>
+                        <tr>
+                          <td>De R$45.012,61 até R$55.976,16</td>
+                          <td>22,5%</td>
+                          <td>R$7.633,51</td>
+                        </tr>        
+                        <tr>
+                          <td>Acima de R$55.976,16</td>
+                          <td>27,5%</td>
+                          <td>R$10.432,32</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>  
+
+                  <!-- print array -->
+                <div class="calc">
+                    <div id="di1"></div>
+                </div>          
+        </div>       
+    </div>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
