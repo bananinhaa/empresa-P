@@ -10,6 +10,7 @@ body {
 .jb1 {
     margin: 10%;
     margin-top: 15%;
+    /* n tava ficando redondinho bonitinho, ai tive q definir as pontas (o mesmo pro jb2) */
     border-radius: 30px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -25,4 +26,8 @@ body {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
+}
+
+.calc {
+    font-size: x-large;
 }

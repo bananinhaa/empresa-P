@@ -1,3 +1,5 @@
+
+// Este código comentado é o q eu ia usar sem ver o video do paulo
 function calculo(){
     var er1 = document.getElementById("di1");
 
@@ -25,6 +27,7 @@ function limpar() {
     nome.value = "";
     valor.value = "";
     horas.value = "";
+    imposto.value = "";
 
     console.clear();
 }
